@@ -1,5 +1,3 @@
-package Baithuchanh;
-
 import java.util.Scanner;
 
 public class ngay24_1_slide30 {

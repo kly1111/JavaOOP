@@ -23,6 +23,5 @@ public class ngay31_1_slide97_b12 {
             }
         }
         System.out.println("Phan tu lon nhat trong mang la : " + max);
-
     }
 }
