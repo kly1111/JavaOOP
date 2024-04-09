@@ -1,26 +1,31 @@
 package shapes;
 
 import java.util.Scanner;
+import java.util.*;
 
-public class HinhChuNhat {
+public class HinhChuNhat extends HinhHoc {
     public float dai;
     public float rong;
-    public float cv;
-    public float dt;
+
     Scanner sc = new Scanner(System.in);
 
-    public void nhapThongTin(){
+    public HinhChuNhat(){
+        ten = "Hinh ChU Nhat";
+    }
+
+    public void NhapChieuDai(){
         System.out.println("Nhap chieu dai : ");
         dai = sc.nextFloat();
+    }
+    public void NhapChieuRong(){
         System.out.println("Nhap chieu rong : ");
-        rong = sc.nextFloat();
+        dai = sc.nextFloat();
     }
-    public void tinh(){
-        cv = (dai + rong) * 2 ;
-        dt = dai * rong ;
+
+    public void tinhChuVi(){
+        chuVi = (dai + rong) * 2 ;
     }
-    public void inThongTin(){
-        System.out.println("Chu vi hinh CN la : " + cv );
-        System.out.println("Dien tich hinh CN la : " + dt );
+    public void tinhDienTich(){
+        dienTich = dai * rong ;
     }
 }

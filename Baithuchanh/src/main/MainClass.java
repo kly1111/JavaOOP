@@ -2,19 +2,41 @@ package main;
 
 import shapes.HinhChuNhat;
 import shapes.HinhTron;
+import shapes.HinhTru;
+import shapes.HinhVuong;
 
 public class MainClass {
     public static void main(String[] args) {
-        HinhTron ht = new HinhTron();
-        HinhChuNhat HCN = new HinhChuNhat();
+        HinhTron hinhTron = new HinhTron();
+        HinhChuNhat hinhChuNhat = new HinhChuNhat();
+        HinhTru hinhTru = new HinhTru();
+        HinhVuong hinhVuong = new HinhVuong();
 
-        ht.nhapBanKinh();
-        ht.tinhChuVi();
-        ht.tinhDienTich();
-        ht.inKetQua();
+        hinhTron.xuatTen();
+        hinhTron.nhapBanKinh();
+        hinhTron.tinhChuVi();
+        hinhTron.tinhDienTich();
+        hinhTron.inChuVi();
+        hinhTron.inDienTich();
 
-        HCN.nhapThongTin();
-        HCN.tinh();
-        HCN.inThongTin();
+        hinhTru.xuatTen();
+        hinhTru.nhapChieuCao();
+        hinhTru.tinhTheTich();
+        hinhTru.inTheTich();
+
+        hinhChuNhat.xuatTen();
+        hinhChuNhat.NhapChieuDai();
+        hinhChuNhat.NhapChieuRong();
+        hinhChuNhat.tinhChuVi();
+        hinhChuNhat.tinhDienTich();
+        hinhChuNhat.inChuVi();
+        hinhChuNhat.inDienTich();
+
+        hinhVuong.xuatTen();
+        hinhVuong.nhapCanh();
+        hinhVuong.tinhChuVi();
+        hinhVuong.tinhDienTich();
+        hinhVuong.inChuVi();
+        hinhVuong.inDienTich();
     }
 }

@@ -1,27 +1,26 @@
 package shapes;
 
 import java.util.Scanner;
+import java.util.*;
 
-public class HinhTron {
-    final float pi = 3.14f;
+public class HinhTron extends HinhHoc{
     public float r;
-    public float cv;
-    public float dt;
+    
     Scanner sc = new Scanner(System.in);
+
+    public HinhTron(){
+        ten = "Hinh Tron ";
+    }
 
     public void nhapBanKinh(){
         System.out.println("Nhap ban kinh cua hinh tron : ");
         r = sc.nextFloat();
     }
     public void tinhChuVi(){
-        cv = 2 * pi * r;
+        chuVi = 2 * PI * r;
     }
     public void tinhDienTich(){
-        dt = pi * r * r;
-    }
-    public void inKetQua(){
-        System.out.println("Chu vi cua hinh tron la : " + cv);
-        System.out.println("Dien tich cua hinh tron la : " + dt);
+        dienTich = PI * r * r;
     }
 }
 
