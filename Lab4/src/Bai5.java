@@ -5,7 +5,7 @@ class sinhvien{
     public Scanner sc = new Scanner(System.in);
 
     public sinhvien(){
-
+        
     }
 
     public void Nhap(){
